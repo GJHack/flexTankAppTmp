@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=JetBrains+Mono:wght@700&family=PT+Sans+Narrow:wght@700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-basis: 100%;
+}
+nav {
+  display: flex;
+  flex-grow: .5;
+}
+ul {
+    margin-right: 2%;
+    margin-bottom: 2%;
+    flex-basis: 100%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    display: flex;
+}
+ul li {
+  font-family: 'JetBrains Mono';
+  font-size: 130%;
+  list-style-type: none;
+  color: #79818d;
+  display: inline-block;
+  margin-right: 2%;
+}
+li a {
+  color: #79818d;
+  text-decoration: none;
+  transition: all .3s;
+}
+li a:hover {
+  filter: opacity(0.5);
+  font-size: 150%;
+}
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: stretch;
+
+}
+.centerContainer {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-evenly;
+  transition: all .5s;
+  padding-top: 6%;
+}
+.slideOne {
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #65a9d9;
+  background-image: url(../images/smallcloud.png), url(../images/smallcloud.png);
+  background-repeat: no-repeat;
+  background-position: 10% 28%, 15% 80%;
+}
+.header {
+  align-self: flex-start;
+  min-height: 60px;
+  max-height: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.header img {
+  margin: auto;
+}
+.header h2,h3 {
+  font-family: 'PT Sans Narrow';
+  color: #4c5767;
+  padding-left: 5%;
+}
+h1 {
+  font-family: 'PT Sans Narrow';
+  font-size: 200%;
+
+  color: #4c5767;
+}
+h3 {
+  font-family: 'JetBrains Mono';
+}
+.footer {
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.footer ul {
+  justify-content: center;
+  align-items: center;
+}
+.emailForm {
+  margin-top: 4%;
+  border-style: none;
+  color: #bec2c8;
+  border-radius: 5px;
+  width: 20em;
+  height: 2.6em;
+  padding-left: 5%;
+  background-color: #fff;
+  transition: all .3s;
+}
+.emailForm:focus{
+  color: #000;
+  border-style: none;
+  outline-style: none;
+  transform: scale(1.05);
+}
+.free {
+  background-color: #ffce54;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1%;
+}
+.signUp {
+  font-family: 'JetBrains Mono';
+  background-color: #77c344;
+  border-style: none;
+  border-radius: 5px;
+  color: #fff;
+  height: 2.6em;
+}
+.smallSignup {
+  font-size: .8em;
+}
+.textArea {
+  align-self: flex-start;
+  flex-grow: .3;
+  transition: all .5s;
+  margin: auto;
+}
+.textArea h1,h3,span {
+  color: #fff;
+  margin-bottom: 1%;
+}
+
+
+.textAreaTwo {
+ padding-right: 3%;
+ margin-left: 6%;
+}
+.textAreaTwo h3 {
+  color: #424c5e;
+}
+.textAreaTwo h3 img {
+  margin-bottom: -2%;
+}
+.textAreaTwo p {
+  color: #9499a2;
+}
+.textAreaTwo div {
+  margin-top: 8%;
+}
+
+.footerSlider h3 {
+  color: #424c5e;
+}
+.footerSlider p {
+  color: #9499a2;
+}
+
+.slideOne .imgBlock {
+  max-height: 750px;
+  flex-shrink: 1;
+}
+.slideOne .imgBlock img {
+  transition: all .5s;
+}
+.slideOne .imgBlock img:hover {
+  transform: scale(100%);
+}
+
+
+.slideTwo {
+  padding-bottom: 7%;
+}
+.slideTwo h2{
+  font-size: 2em;
+}
+.slideTwo .imgBlock {
+  max-width: 38vw;
+  margin-left: auto;
+  overflow: hidden;
+  transition: all .5s;
+}
+.slideTwo .imgBlock img {
+
+}
+.slideTwo .imgBlock img:hover {
+  transform: scale(100%);
+}
+
+
+.slideFree {
+  background-color: #f6f6f7;
+}
+.slideFree h2 {
+  font-family: 'PT Sans Narrow';
+  color: #4d5564;
+  font-size: 3em;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.slideFree ul {
+  flex-direction: row;
+  align-self: stretch;
+  justify-content: center;
+}
+.slideFree ul li {
+  text-align: center;
+  padding: 10px 17px;
+  transition: all .3s;
+}
+.slideFree ul li:hover {
+  border-radius: 50%;
+  color: #fff;
+  background-color: #64a4d7;
+}
+.slideFree .oneInfo {
+  margin-bottom: 20%;
+}
+
+.slideFour {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+}
+.slideFour h2 {
+  font-family: 'PT Sans Narrow';
+  color: #4d5564;
+  font-size: 3em;
+}
+.slideFour .fourEmail {
+  color: #5a626e;
+}
+.slideFour input {
+  background-image: url(../images/emaiforinput.png);
+  background-repeat: no-repeat;
+  background-size: 9%;
+  color: #bec2c8;
+  background-position: 4% 50%;
+  font-size: 1.7em;
+  padding-left: 13%;
+  border-radius: 4px;
+  border-style: none;
+  outline: 1px solid;
+  width: 28vw;
+  height: 2.6vw;
+}
+.slideFour input:focus {
+  padding-left: 13%;
+}
+.slideFour .footer {
+  margin-top: 3%;
+}
+.slideFour form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.slideFour form button{
+  margin-left: 2%;
+  height: 2.8vw;
+}
+.slideFour .footer {
+}
+.slideFour .footer img {
+  margin: 2% 0 2% 2%;
+}
+@media (max-width: 1184px) {
+  .slideOne .imgBlock img {
+    margin-bottom: -21%;
+  }
+  .slideOne .imgBlock img:hover {
+    margin-bottom: -13%;
+  }
+  .slideTwo .imgBlock {
+    max-width: 300px;
+  }
+  .slideTwo .imgBlock img {
+    max-width: 100%;
+  }
+  .textArea {
+    font-size: .7em;
+    margin-left: 7%;
+  }
+}
+@media (max-width: 600px) {
+  .header img {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .textArea {
+    padding: 5%;
+    margin: auto;
+    font-size: .5em;
+  }
+  .emailForm {
+    margin-left: auto;
+    transform: scale(0.954)
+  }
+  .signUp {
+    margin-left: auto;
+    transform: scale(.8);
+  }
+  .emailForm:focus{
+    color: #000;
+    border-style: none;
+    outline-style: none;
+    transform: scale(.9);
+}
+  .slideOne .imgBlock {
+    max-height: 421px;
+    transform: scale(1)
+  }
+
+  .slideOne .imgBlock img{
+    max-width: 360px;
+    transform: scale(1)
+  }
+  .slideTwo .imgBlock img{
+    max-width: 360px;
+    transform: scale(1)
+  }
+  ul {
+    flex-direction: column;
+  }
+  .slideFree .oneInfo {
+    margin-bottom: 5%;
+    padding: 4%;
+  }
+  .slideFour h2 {
+    font-family: 'PT Sans Narrow';
+    color: #4d5564;
+    font-size: 1.5em;
+  }
+  .slideFour .fourEmail {
+    color: #5a626e;
+    font-size: 60%;
+    margin-bottom: 6%;
+  }
+  .slideFour input {
+    background-image: url(../images/emaiforinput.png);
+    background-repeat: no-repeat;
+    background-size: 9%;
+    color: #bec2c8;
+    background-position: 4% 50%;
+    font-size: 0.8em;
+    padding-left: 13%;
+    border-radius: 4px;
+    border-style: none;
+    outline: 1px solid;
+    width: 40vw;
+    height: 7vw;
+  }
+  .slideFour input:focus {
+    padding-left: 13%;
+  }
+  .slideFour form button{
+    margin-left: 2%;
+    height: 9vw;
+  }
+}
